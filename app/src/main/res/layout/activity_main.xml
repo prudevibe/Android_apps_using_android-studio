@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/nepal"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/download"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/txtfname"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:layout_height="wrap_content"
+            android:hint="first name"
+            android:paddingBottom="10dp"
+            android:textColor="#5b39c6"
+            android:layout_marginBottom="10dp"
+            />
+        <EditText
+            android:id="@+id/txtlname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="#5b39c6"
+            android:layout_marginBottom="10dp"
+            android:paddingBottom="10dp"
+            android:hint="second name"
+            />
+        <EditText
+            android:id="@+id/txtemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColor="#5b39c6"
+            android:layout_marginBottom="10dp"
+            android:paddingBottom="10dp"
+            android:hint="email"/>
+        <EditText
+
+            android:id="@+id/txtpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#5b39c6"
+            android:inputType="textPassword"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="password"/>
+        <EditText
+            android:id="@+id/txtphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="#5b39c6"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Phone no"/>
+        <Button
+            android:id="@+id/btnreg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#3aa8c1"
+            android:textColor="#0009ff"
+            />
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#9acd32"
+            android:textColor="#ba160c"
+            android:text="login"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".earthquake">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/disaster_table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SITUATION SCENARIO"
+            android:textSize="30dp"
+            android:layout_marginLeft="43dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Basic_parameters"
+            android:text="Basic Parameters"
+            android:textSize="20dp"
+            android:layout_marginLeft="89dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/food_supply_tv"
+            android:text="Food Supply"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            />
+        <EditText
+            android:id="@+id/food_supply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Inabundance,ample,deficient"
+            android:layout_margin="5dp"
+            android:layout_marginRight="10dp"
+            android:inputType="text"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/water_supply_tv"
+            android:text="Water Supply"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            />
+        <EditText
+            android:id="@+id/water_supply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Inabundance,ample,deficient"
+            android:layout_margin="5dp"
+            android:layout_marginRight="10dp"
+            android:inputType="text"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clothes_supply_tv"
+            android:text="Clothes"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            />
+        <EditText
+            android:id="@+id/Clothes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Inabundance,ample,deficient"
+            android:layout_margin="5dp"
+            android:layout_marginRight="10dp"
+            android:inputType="text"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/injury_tv"
+            android:text="No of Injury"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            />
+        <EditText
+            android:id="@+id/Injured"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="IN NUMBERS"
+            android:layout_margin="5dp"
+            android:layout_marginRight="10dp"
+            android:inputType="text"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/People_stuck_tv"
+            android:text="No of People stuck"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            />
+        <EditText
+            android:id="@+id/People_stuck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="IN NUMBERS"
+            android:layout_margin="5dp"
+            android:layout_marginRight="10dp"
+            android:inputType="text"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/people_rescued_tv"
+            android:text="No of People rescued"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            />
+        <EditText
+            android:id="@+id/people_rescued"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="IN NUMBERS"
+            android:layout_margin="5dp"
+            android:layout_marginRight="10dp"
+            android:inputType="text"
+            />
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/scrollView"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Coordinates:"
+                    android:id="@+id/textView" />
+            </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Start Service"
+                android:id="@+id/button"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stop Service"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/button2"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Surrounding_environment_tv"
+            android:text="Surrounding Enviroment"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            />
+        <EditText
+            android:id="@+id/Surrounding_environment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Unhygienic,hygienic"
+            android:layout_margin="5dp"
+            android:layout_marginRight="10dp"
+            android:inputType="text"
+            />
+        <TextView
+            android:id="@+id/infrastructure_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="89dp"
+            android:text="Infrastructure Available"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/blue_infrastructure_tv"
+            android:text="Bluetooth Infrastructure"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <EditText
+            android:id="@+id/blue_infrastructure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Available,Not Available"
+            android:layout_margin="5dp"
+            android:layout_marginRight="10dp"
+            android:inputType="text"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/zig_infrastructure_tv"
+            android:text="Zigbee Infrastructure"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <EditText
+            android:id="@+id/Zig_infrastructure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Available,Not Available"
+            android:layout_margin="5dp"
+            android:layout_marginRight="10dp"
+            android:inputType="text"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wifi_infrastructure_tv"
+            android:text="Wifi Direct Infrastructure"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <EditText
+            android:id="@+id/wifi_infrastructure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Available,Not Available"
+            android:layout_margin="5dp"
+            android:layout_marginRight="10dp"
+            android:inputType="text"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lora_infrastructure_tv"
+            android:text="Lora Infrastructure"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <EditText
+            android:id="@+id/lora_infrastructure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Available,Not Available"
+            android:layout_margin="5dp"
+            android:layout_marginRight="10dp"
+            android:inputType="text"
+            />
+        <TextView
+            android:id="@+id/time_delay_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="142dp"
+            android:text="Time Delay"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/strength_tv"
+            android:text="Strength"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <EditText
+            android:id="@+id/strength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Poor,Moderate,Good"
+            android:layout_margin="5dp"
+            android:layout_marginRight="10dp"
+            android:inputType="text"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/frequency_tv"
+            android:text="Frequency"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <EditText
+            android:id="@+id/frequency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Good,Bad"
+            android:layout_margin="5dp"
+            android:layout_marginRight="10dp"
+            android:inputType="text"
+            />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="save"
+            android:layout_marginLeft="150dp"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
